@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Tinder swipe cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./dinder.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="tinder">
+      <div class="tinder--status">
+        <i class="fa fa-remove"></i>
+        <i class="fa fa-heart"></i>
+      </div>
+
+      <div class="tinder--cards">
+        <div class="tinder--card">
+          <img src="logan.png" />
+          <h3>Identity Logan Park</h3>
+          <p>
+            Located on Shattuck, great amenities, in house laundry, 15 minute
+            walk from campus, and 5 minutes by bus!
+          </p>
+        </div>
+        <div class="tinder--card">
+          <img src="varsity.jpg" />
+          <h3>Varsity</h3>
+          <p>Located on Shattuck, amazing rooftop, gated access, furnished!</p>
+        </div>
+        <div class="tinder--card">
+          <img src="ursa.jpeg" />
+          <h3>Ursa</h3>
+          <p>Right next to RSF, next to Starbucks, swimming pool!</p>
+        </div>
+        <div class="tinder--card">
+          <img src="standard.jpeg" />
+          <h3>The Standard</h3>
+          <p>
+            1 minute walk to campus, amazing patio access, pool on the rooftop,
+            gym!
+          </p>
+        </div>
+        <div class="tinder--card">
+          81
+          <img src="sterling.jpeg" />
+          <h3>Sterling Apartments</h3>
+          <p>
+            Many different locations (all near transportation), furnished, gym,
+            pool, rooftop deck!
+          </p>
+        </div>
+      </div>
+
+      <div class="tinder--buttons">
+        <button id="nope"><i class="fa fa-remove"></i></button>
+        <button id="love"><i class="fa fa-heart"></i></button>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="./dinder.js"></script>
+  </body>
+</html>

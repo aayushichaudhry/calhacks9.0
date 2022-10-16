@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
+    <link>
+    <title>Find your Den</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 size=20>Find Your Den</h1>
+        <div class="login">
+            <div class="button-box">
+                <div id="b1"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="register()">Register</button>
+
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/"></a>
+                <img src="meta.png">
+                </a>
+                <a href="https://www.google.com/">
+                    <img src="google.png">
+                </a>
+            </div>
+            <form id="login" class="forms" action="filterpage.html">
+                <input type="text" id="email" class="input" placeholder="Email" required>
+                <input type="text" id="password" class="input" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember me</span>
+                <button type="submit" class="submit-btn" onclick="validate()">Log-in</button>
+            </form>
+            <form id="register" class="forms" action="filterpage.html">
+                <input type="text" class="input" placeholder="Name" required>
+                <input type="text" class="input" placeholder="Email" required>
+                <input type="text" class="input" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn" onclick="validate()">Register</button>
+            </form>
+
+        </div>
+
+
+    </div>
+    <script>
+        var a = document.getElementById("register");
+        var b = document.getElementById("login");
+        var c = document.getElementById("b1");
+
+        function register() {
+            b.style.left = "-500px"
+            a.style.left = "50px"
+            c.style.left = "110px"
+        }
+
+        function login() {
+            b.style.left = "50px"
+            a.style.left = "550px"
+            c.style.left = "0"
+        }
+    </script>
+
+</body>
+
+</html>
